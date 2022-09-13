@@ -21,7 +21,6 @@ body {
 main  {
     height: 100vh;
     width: var(--main-size);
-    background-color: rgb(112, 32, 32);
     display: flex;
 } 
 
@@ -31,7 +30,6 @@ main  {
     flex-basis: var(--left-size);
     display: flex;
     overflow: hidden;
-    background-color: bisque;
     position: relative;
 }
 
@@ -75,5 +73,9 @@ a:visited {
 #right-side {
     height: 100%;
     flex-basis: var(--right-size);
-    background-color: blueviolet;
+    background-color: white;
+}
+
+form {
+    border: 2px solid black;
 }
