@@ -73,9 +73,74 @@ a:visited {
 #right-side {
     height: 100%;
     flex-basis: var(--right-size);
-    background-color: white;
+    background-color: rgb(245, 242, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#right-side > p:first-of-type {
+    position: relative;
+    bottom: 18%;
+}
+
+#right-side > p:nth-of-type(2){
+    position: relative;
+    bottom: 15%;
 }
 
 form {
+    position: relative;
+    bottom: 8%;
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
     border: 2px solid black;
+    background-color: white;
+}
+
+form > div {
+    display: flex;
+    border: black solid 1px;
+    gap: 50px
+}
+
+#form-left, #form-right {
+    flex-basis: 35%;
+}
+
+#form-left > *, #form-right > * {
+    display: block;
+}
+
+input {
+    border: 1px grey solid;
+    width: 100%;
+    border-radius: 5px;
+    height: 20px;
+}
+
+button {
+    position: absolute;
+    font-size: 15px;
+    padding: 8px 30px;
+    top: 120%;
+    background-color: bisque;
+    border: 3px solid black;
+}
+
+#log-in {
+    position: relative;
+    top: 5%;
+    font-size: small;
+    font-weight: 500;
 }
