@@ -101,16 +101,15 @@ form {
     position: relative;
     bottom: 8%;
     width: 90%;
-    padding: 0 5%;
+    padding: 3% 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     background-color: white;
 }
 
 form > div {
     display: flex;
-    border: black solid 1px;
     gap: 50px
 }
 
@@ -122,25 +121,35 @@ form > div {
     display: block;
 }
 
+label{
+    margin-top: 10px;
+    color: rgb(94, 94, 94);
+    font-size: 10px;
+    font-weight: bold;
+}
+
 input {
-    border: 1px grey solid;
     width: 100%;
+    border: rgb(225, 225, 225) 1px solid;
     border-radius: 5px;
     height: 20px;
+    color: grey;
+    padding-left: 5px;
 }
 
 button {
     position: absolute;
     font-size: 15px;
-    padding: 8px 30px;
+    padding: 10px 30px;
     top: 120%;
-    background-color: bisque;
-    border: 3px solid black;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
 }
 
 #log-in {
     position: relative;
     top: 5%;
     font-size: small;
-    font-weight: 500;
+    font-weight: 600;
 }
